@@ -1,0 +1,17 @@
+{
+  "name": "coffeeshop",
+  "version": "1.0.0",
+  "description": "Freelance project for a local coffee shop",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css",
+    "dev": "npx tailwind -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "author": "Noel Codes",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
+  }
+}

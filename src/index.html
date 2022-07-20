@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/401abe772b.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../public/styles.css" />
+        <title>Sylvia's Coffee Cup</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kaushan+Script&family=Poppins:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav class="bg-darkBrown p-4 md:p-8 flex flex-col md:gap-14">
+            <div class="flex flex-row items-center justify-center">
+                <!-- Logo -->
+                <img
+                    .
+                    src="../public/images/Icon.svg"
+                    alt="A hot coffee cup with the text: 'Sylvia's Coffee Cup' which is the name of the bussiness"
+                />
+
+                <!-- Hamburger Menu -->
+                <div
+                    id="hamburger-menu"
+                    onclick="toggleHidden(this)"
+                    class="z-30 ml-auto md:hidden flex flex-col justify-center items-center border border-gray p-3 gap-y-2"
+                >
+                    <span
+                        class="w-10 h-1 bg-amber-300 bg-lightBrown rounded-full"
+                    ></span>
+                    <span
+                        class="w-10 h-1 bg-amber-300 bg-lightBrown rounded-full"
+                    ></span>
+                    <span
+                        class="w-10 h-1 bg-amber-300 bg-lightBrown rounded-full"
+                    ></span>
+                </div>
+
+                <!-- Navbar Links-->
+                <div
+                    id="navbarLinks"
+                    class="absolute top-[-300px] md:static h-72 pt-12 md:pt-0 md:h-auto gap-8 md:gap-x-48 flex flex-col md:flex-row w-screen md:w-auto place-self-center items-center justify-center bg-yellowBrown md:bg-opacity-0 md:text-yellowBrown text-darkBrown font-linksFont z-20 md:z-0 md:mx-auto transition-all ease-in duration-200"
+                >
+                    <a class="hover:text-gray" href="#">MENU</a>
+                    <a class="hover:text-gray" href="#">ABOUT US</a>
+                    <a class="hover:text-gray" href="#">CONTACT US</a>
+                </div>
+            </div>
+
+            <!-- Title and hero image -->
+            <div
+                class="my-10 md:mt-0 flex flex-row justify-evenly items-center"
+            >
+                <h1
+                    class="font-titleFont text-5xl lg:6xl md:text-9xl text-yellowBrown text-center"
+                >
+                    Sylvia's Coffee Cup
+                </h1>
+                <img
+                    class="hidden lg:block"
+                    src="../public/images/heroImg.svg"
+                    alt="4 coffee cups on table"
+                />
+            </div>
+
+            <!-- Information -->
+            <div
+                class="flex flex-col gap-2 font-linksFont font-light text-yellowBrown"
+            >
+                <p>(209) 645-0221</p>
+                <p>sylvias.s.coffeecup@gmail.com</p>
+            </div>
+        </nav>
+
+        <!-- Menu section -->
+        <section id="menu" class="bg-lightBrown py-14 md:py-28 xl:py-36">
+            <!-- Container for menu -->
+            <div
+                class="mx-auto w-4/5 flex gap-14 lg:gap-20 flex-col md:flex-row md:flex-wrap place-content-evenly"
+            >
+                <!-- Menu -->
+                <div
+                    class="font-textFont bg-darkBrown text-yellowBrown flex flex-col items-center w-fit mx-auto md:mx-0 gap-6 p-10 md:p-16 rounded-md shadow-[#484F4D] shadow-lg"
+                >
+                    <h3 class="mb-5 text-3xl font-semibold lg:text-4xl">
+                        COFFEES
+                    </h3>
+                    <ul class="flex flex-col gap-6 text-xl lg:text-1-xl">
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <div
+                    class="font-textFont bg-darkBrown text-yellowBrown flex flex-col items-center w-fit mx-auto md:mx-0 gap-6 p-10 md:p-16 rounded-md shadow-[#484F4D] shadow-lg"
+                >
+                    <h3 class="mb-5 text-3xl font-semibold lg:text-4xl">
+                        COFFEES
+                    </h3>
+                    <ul class="flex flex-col gap-6 text-xl lg:text-1-xl">
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <div
+                    class="font-textFont bg-darkBrown text-yellowBrown flex flex-col items-center w-fit mx-auto md:mx-0 gap-6 p-10 md:p-16 rounded-md shadow-[#484F4D] shadow-lg"
+                >
+                    <h3 class="mb-5 text-3xl font-semibold lg:text-4xl">
+                        COFFEES
+                    </h3>
+                    <ul class="flex flex-col gap-6 text-xl lg:text-1-xl">
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex flex-row gap-16">
+                                <p>sagittis nisl rhoncus</p>
+                                <p>$5</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us section -->
+        <section id="aboutUs" class="bg-darkBrown py-14 md:py-28 xl:py-36">
+            <div
+                class="lg:w-[80%] 2xl:w-[60%] gap-12 flex flex-col flex-wrap lg:flex-row items-center justify-center mx-auto"
+            >
+                <img
+                    class="border border-gray shadow-lg shadow-[#161823] w-[80%] md:w-[60%] lg:w-2/4 xl:w-2/5 2xl:w-2/6"
+                    src="../public/images/coffeeMug.jpg"
+                    alt="coffee mug"
+                />
+                <p
+                    class="text-yellowBrown font-textFont text-center text-xl lg:text-2xl py-6 w-[80%] md:w-[60%] lg:w-2/4"
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Pulvinar sapien et ligula ullamcorper malesuada
+                    proin libero nunc consequat. Id faucibus nisl tincidunt eget
+                    nullam non nisi. Posuere lorem ipsum dolor sit. Neque
+                    egestas congue quisque egestas diam in arcu cursus.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            id="contactUs"
+            class="bg-lightBrown flex flex-col items-center justify-evenly flex-wrap gap-16 py-20 px-6"
+        >
+            <!-- Information table -->
+            <div
+                class="w-full md:max-w-screen-sm bg-darkBrown text-yellowBrown py-10 px-6 font-textFont rounded-md shadow-[#484F4D] shadow-lg"
+            >
+                <h3 class="text-center text-3xl mb-8">
+                    Sylvia's Coffee Shop Information
+                </h3>
+                <div class="flex flex-col gap-8 px-8">
+                    <div class="flex flex-row gap-6 items-center">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
+                        <p class="text-xl">123 Main St</p>
+                    </div>
+                    <div class="flex flex-row gap-6 items-center">
+                        <i class="fa-solid fa-phone fa-lg"></i>
+                        <p class="text-xl">(209) 123-4567</p>
+                    </div>
+                    <div class="flex flex-row gap-6 items-center">
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                        <p class="text-xl">sylvias.coffee.cup</p>
+                    </div>
+                    <div class="flex">
+                        <img src="../public/images/pic.svg" class="w-full" alt="coffe mug covered by title that says: 'Sylvya's Coffee Cup'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Information table -->
+            <div
+                class="w-full md:max-w-screen-sm bg-darkBrown text-yellowBrown py-10 px-6 font-textFont rounded-md shadow-[#484F4D] shadow-lg"
+            >
+                <h3 class="text-center text-3xl mb-8">
+                    Get In Contact With Us
+                </h3>
+                <form class="flex flex-col gap-6 px-8">
+                    <div
+                        class="flex flex-col"
+                    >
+                        <label class="text-xl pb-4 lg:mt-[10px]" for="name"
+                            >Name:</label
+                        >
+                        <input
+                            class="bg-darkBrown border-yellowBrown border-b w-full focus:outline-none focus:border-gray"
+                            type="text"
+                            id="name"
+                            required
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col"
+                    >
+                        <label class="text-xl pb-4 lg:mt-[10px]" for="email"
+                            >Email:</label
+                        >
+                        <input
+                            class="bg-darkBrown border-yellowBrown border-b w-full focus:outline-none focus:border-gray"
+                            autocomplete="email"
+                            type="email"
+                            id="email"
+                            required
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col"
+                    >
+                        <label class="text-xl pb-4 lg:mt-[10px]" for="subject"
+                            >Subject:</label
+                        >
+                        <input
+                            class="bg-darkBrown border-yellowBrown border-b w-full focus:outline-none focus:border-gray"
+                            type="text"
+                            id="subject"
+                            required
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col"
+                    >
+                        <label class="text-xl lg:mt-[10px]" for="message"
+                            >Message:</label
+                        >
+                        <textarea
+                            class="bg-darkBrown border-yellowBrown border-b w-full focus:outline-none focus:border-gray"
+                            rows="4"
+                            id="message"
+                            required
+                        ></textarea>
+                    </div>
+                    <button class="bg-yellowBrown font-linksFont w-40 py-2 rounded text-darkBrown shadow-lg shadow-[#141313] hover:bg-lightBrown" type="submit">SEND</button>
+                </form>
+            </div>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
+
+<!-- min-w-[45%] lg:w-[45%] xl:w-[35%]
+min-w-[45%] lg:w-[45%] xl:w-[35%] -->
