@@ -609,6 +609,22 @@ video {
   height: 18rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[22rem\] {
+  height: 22rem;
+}
+
+.h-\[22\.5rem\] {
+  height: 22.5rem;
+}
+
+.h-\[20\.5rem\] {
+  height: 20.5rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1040,12 +1056,24 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:w-2\/5 {
     width: 40%;
   }
 
   .xl\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:py-36 {
@@ -1055,6 +1083,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:block {
+    display: block;
+  }
+
   .\32xl\:w-\[60\%\] {
     width: 60%;
   }
